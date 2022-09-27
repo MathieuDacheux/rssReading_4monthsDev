@@ -7,5 +7,3 @@
 // Appel des fonctions
 
 // Appel des vues
-
-
