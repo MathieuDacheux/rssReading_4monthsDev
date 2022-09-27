@@ -1,4 +1,4 @@
-<form method="GET">
+<form method="POST">
     <label for="company">Entreprise</label>
     <input class="hidden" type="checkbox" name="subject[]" id="company" value="0">
     

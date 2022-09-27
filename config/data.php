@@ -16,9 +16,9 @@ $rssWork = simplexml_load_file($urlWork);
 
 // Tableau liant les thèmes au Chargement des flux RSS
 $themes = [
-    '0' => $rssCompany,
-    '1' => $rssMoney,
-    '2' => $rssFrenchEconomy,
-    '3' => $rssEstate,
-    '4' => $rssWork
+    $rssCompany,
+    $rssMoney,
+    $rssFrenchEconomy,
+    $rssEstate,
+    $rssWork
 ];

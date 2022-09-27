@@ -10,14 +10,13 @@ require_once(__DIR__.'/../config/data.php');
 // Appel des fonctions
 require_once(__DIR__.'/../helpers/functions.php');
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $subjects = filterAndValidateCheckbox();
+}
 // Appel des vues
 
 include(__DIR__.'/../views/templates/header.php');
 
 include(__DIR__.'/../views/parameters.php');
-    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-        $subjects = filterAndValidateCheckbox();
-        setFirstCookie($subjects);
-    }
     
 include(__DIR__.'/../views/templates/footer.php');
