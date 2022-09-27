@@ -11,6 +11,7 @@
     <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400&display=swap" rel="stylesheet">
     <title>RSS Reader</title>
 </head>
+
 <body>
     <!-- En tête -->
     <header>
@@ -40,49 +41,149 @@
     </header>
     <!-- Contenu -->
     <main>
-        <section class="d-flex flex-column justify-content-center m-auto">
-            <!-- Card 1 -->
-            <div class="card m-auto mb-5 " style="width: 20rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex flex-column justify-content-center m-auto">
+                        <!-- Card 1 -->
+                        <div class="card m-auto mb-5 " style="width: 20rem;">
 
-                <div class="card-body d-flex m-auto p-auto">
-                    <img src="..." class="card-img m-5" alt="...">
-                    
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                <div class="d-flex flex-column justify-content-center m-auto">
+                        <!-- Card 1 -->
+                        <div class="card m-auto mb-5 " style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                <div class="d-flex flex-column justify-content-center m-auto">
+                        <!-- Card 1 -->
+                        <div class="card m-auto mb-5 " style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="card m-auto mb-5" style="width: 20rem;">
+
+                            <div class="card-body d-flex m-auto p-auto">
+                                <img src="..." class="card-img m-5" alt="...">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Card 2 -->
-            <div class="card m-auto mb-5" style="width: 20rem;">
-
-                <div class="card-body d-flex m-auto p-auto">
-                    <img src="..." class="card-img m-5" alt="...">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card m-auto mb-5" style="width: 20rem;">
-
-                <div class="card-body d-flex m-auto p-auto">
-                    <img src="..." class="card-img m-5" alt="...">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="card m-auto mb-5" style="width: 20rem;">
-
-                <div class="card-body d-flex m-auto p-auto">
-                    <img src="..." class="card-img m-5" alt="...">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="card m-auto mb-5" style="width: 20rem;">
-
-                <div class="card-body d-flex m-auto p-auto">
-                    <img src="..." class="card-img m-5" alt="...">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
