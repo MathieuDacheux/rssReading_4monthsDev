@@ -8,6 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main class="bg-primary80"></main>
 </body>
 </html>
