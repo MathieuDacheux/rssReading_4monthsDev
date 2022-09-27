@@ -8,7 +8,77 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Header */
+
+
+    /* HEADER */
 nav{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+    /* MAIN SETTINGS */
+
+
+
+    /* FOOTER SETTINGS */
+
+
+
+    /* ERREUR 404 SETTINGS */
+
+/* Container de toute la page */
+.main404 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Container des éléments */
+.content404 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.content404 img {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Texte "404" */
+.content404 .text404 {
+    width: auto;
+    margin: 36px 0;
+    font-family: 'General Sans', sans-serif;
+    font-size: 128px;
+    font-weight: 700;
+}
+
+/* Retrait du soulignement de texte dans le bouton */
+.content404 a {
+    text-decoration: none;
+}
+
+/* Style du bouton "Accueil" */
+.content404 div {
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+/* Texte "Accueil" */
+.content404 div p {
+    font-family: 'General Sans', sans-serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
 }
