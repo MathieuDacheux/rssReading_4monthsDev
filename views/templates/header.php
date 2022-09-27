@@ -20,9 +20,11 @@
                 <a class="navbar-brand" href="#">
                     <img src="..\public\img\logo_Flux-RSS.png" alt="Logo" width="200px" class="d-inline-block align-text-center">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Bouton Modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Acceuil</a></li>
@@ -83,6 +85,4 @@
                 </div>
             </div>
         </section>
-
-
     </main>

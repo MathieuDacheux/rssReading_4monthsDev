@@ -8,3 +8,4 @@ require('../config/config.php');
 
 // Appel des vues
 include('../views/templates/header.php');
+include('../views/templates/footer.php');
