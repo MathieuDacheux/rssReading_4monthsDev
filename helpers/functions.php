@@ -8,7 +8,7 @@
         // VÉRIFICATION SI UTILISATEUR CHECK 3 ÉLÉMENTS
         if (empty($subjects)) {
             echo '<p>Champs obligatoire</p>';
-        } else if (count($subjects) > 5) {
+        } else if (count($subjects) > 3 && count($subjects) < 4) {
             echo '<h1>Vous avez choisi trop de sujets</h1>';
         } else {
         // SI PASSAGE DES TEST, HASHASGE DU TABLEAU POUR LE STOCKER DANS UN COOKIE
@@ -79,20 +79,20 @@
     }
 
     // !AFFICHAGE DES CHOIX DE L'UTLISATEUR
-    function displayChoices ($url) {
-            for ($i = 0; $i <= 5; $i++) {
+    function displayChoices ($url, $maxLenght, $themeStyle) {
+            for ($i = 1; $i <= $maxLenght; $i++) {
                 $item = $url->channel->item[$i];
                 $image = $item->children('media', true)->content->attributes();
                 $title = $item->title;
                 $link = $item->guid;
                 $description = $item->description;
 
-                echo '<div class="card m-auto mb-5 " style="width: 20rem;">
+                echo '<div class="card m-auto mb-5 '.$themeStyle.'" style="width: 20rem;">
                         <div class="card-body d-flex m-auto p-auto">
                             <img src="'.$image.'" class="card-img m-5" alt="...">
-                            <h2 class="card-title">'.$title.'</h2>
-                            <p class="card-text">'.$description.'</p>
-                            <div type="button" class="btn btn-primary"><a href="'.$link.'">Voir l\'article complet</a></div>
+                            <h2 class="card-title '.$themeStyle.'">'.$title.'</h2>
+                            <p class="card-text '.$themeStyle.'">'.$description.'</p>
+                            <div type="button" class="btn btn-primary '.$themeStyle.'"><a href="'.$link.'">Voir l\'article complet</a></div>
                         </div>
                 </div>';
             }

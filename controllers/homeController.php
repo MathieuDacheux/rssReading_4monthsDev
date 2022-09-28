@@ -6,6 +6,8 @@
 
     // Variables
     $choices = unserialize($_COOKIE['userRssReader']);
+    $maxArticles = $_COOKIE['numberArticles'];
+    $themeStyle = ($_COOKIE['theme'] == '1') ? 'light' : 'dark';
 
     // Appel des fonctions
     require_once(__DIR__.'/../helpers/functions.php');
@@ -17,8 +19,6 @@
     $urlOne = $newChoices[0];
     $urlTwo = $newChoices[1];
     $urlThree = $newChoices[2];
-    $urlFour = $newChoices[3];
-    $urlFive = $newChoices[4];
 
     
     // Appel des vues
