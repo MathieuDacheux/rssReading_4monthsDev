@@ -9,31 +9,33 @@
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/assets/css/style.css">
-    <script defer src="../public/js/script.js"></script>
-    <title><?= $title ?></title>
+    <script defer src="public/assets/js/script.js"></script>
+    <title>Entreprendre | L'actualité des meilleures</title>
 </head>
 
 <body>
     <!-- En tête -->
     <header>
         <!-- Menu navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light p-4 mb-4 ">
+        <nav class="navbar navbar-expand-lg  navbar-light p-4 mb-4 ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../public/assets/img/logo/logoBlack.png" alt="Logo" class="logo d-inline-block align-text-center">
+                <a class="navbar-brand mx-auto" href="/../index.php">
+                    <img src="../public/assets/img/logo/logoBlack.png" alt="Logo" class="logo d-inline-block d-center  align-text-center">
                 </a>
                 <!-- NavBar -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
                     <?php
                         $links = displayNavbar($choices, $subjectsValue);
-                        
                         if (empty($links)) {
-                            return false;
+                            echo '';
                         } else {
-                            foreach ($links as $value) {
-                                echo '<li class="nav-item"><a class="nav-link" href="#">'.$value.'</a></li>';
+                            echo '<form method="POST" action="'.$method.'">';
+                            foreach ($links as $key => $value) {
+                                echo '<label class="nav-item" for="'.$key.'">'.$value.'</label>';
+                                echo '<input onchange=\'this.form.submit();\' type="radio" name="userChoice" id="'.$key.'" value="'.$key.'">';
                             }
+                            echo '</form>';
                             echo '</ul></div>';
                             echo '<div class="btnContainer">
                                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">

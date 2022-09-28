@@ -15,8 +15,6 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-
-
 .logo {
     width: 200px;
 }
@@ -50,8 +48,8 @@ nav{
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* number of lines to show */
-            line-clamp: 5; 
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4; 
     -webkit-box-orient: vertical;
 }
 
@@ -64,6 +62,16 @@ nav{
     bottom: 1rem;
     width: 100%;
     
+}
+
+.containerDate {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    right: 1rem;
+    bottom: 3rem;
+    width: 100%;
 }
 
     /* FOOTER SETTINGS */

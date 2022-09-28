@@ -6,6 +6,8 @@
 
     // Variables
     $choices = [];
+    $method = ($_SERVER['REQUEST_URI'] == '/controllers/pagesController.php') ? './pagesController.php' : './controllers/pagesController.php';
+
 
     // Appel des fonctions
     require_once(__DIR__.'/../helpers/functions.php');

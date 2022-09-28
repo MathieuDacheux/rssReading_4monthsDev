@@ -65,6 +65,21 @@
         return $theme;
     }
 
+    // !FILTRER ET VALIDER LES RADIOS DEPUIS HOME.PHP
+    function filterAndValidateHomeSelect () {
+        // FILTRAGE DU BOUTON RADIO CHOISI
+        $userChoice = filter_input(INPUT_POST, 'userChoice', FILTER_SANITIZE_NUMBER_INT);
+        
+        // VÉRIFICATION SI LE RADIO EST LE BON
+        if (empty($userChoice)) {
+            echo '<p>Il n\'y a pas de choix</p>';
+        } else if ($userChoice != 1 && $userChoice != 2 && $userChoice != 3) {
+            echo '<p>Le choix n\'est pas conforme</p>';
+        } else {
+            return $userChoice;
+        }
+    }
+
     // !COMPARER LES CHOIX DE L'UTILISATEUR ET LE TABLEAU THÈME
     function compareChoiceAndThemes ($choices, $themes) {
         $newChoices = [];
@@ -86,19 +101,23 @@
                 $title = $item->title;
                 $link = $item->guid;
                 $description = $item->description;
+                $date = date('d/m/Y', strtotime(substr($item->pubDate, 5, 11)));
 
                 echo '<div class="card m-auto mb-5 '.$themeStyle.'">
                         <img src="'.$image.'" alt="Image de l\'article \'Le Monde\'">
                         <div class="card-body d-flex flex-column m-auto p-auto">
-                        <div class="titleContainer">
-                            <h3 class="card-title'.$themeStyle.'">'.$title.'</h3>
-                        </div>
-                        <div class="descriptionContainer">
-                            <p class="card-text'.$themeStyle.'">'.$description.'</p>
-                        </div>
-                        <div class="buttonContainer">
-                            <a class="btn btn-primary '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
-                        </div>
+                            <div class="titleContainer">
+                                <h3 class="card-title'.$themeStyle.'">'.$title.'</h3>
+                            </div>
+                            <div class="descriptionContainer">
+                                <p class="card-text'.$themeStyle.'">'.$description.'</p>
+                            </div>
+                            <div class="containerDate">
+                                <p class="card-date">'.$date.'</p>
+                            </div>
+                            <div class="buttonContainer">
+                                <a class="btn btn-primary '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
+                            </div>
                         </div>
                 </div>';
             }
@@ -114,3 +133,38 @@
         }
     } 
     
+    // !AFFICHAGE DE L'ÉLÉMENT CHOISI DEPUIS LA NAVBAR HOME.PHP
+    function displayUniqueSubject ($choices ,$userChoice, $maxLenght, $themeStyle) {
+        var_dump($choices);
+        var_dump($userChoice);
+        if (!array_key_exists($userChoice, $choices)) {
+            echo '<p>La valeur n\'existe pas</p>';
+        } else {
+            for ($i = 1; $i <= $maxLenght; $i++) {
+                $item = $choices[$userChoice]->channel->item[$i];
+                $image = $item->children('media', true)->content->attributes();
+                $title = $item->title;
+                $link = $item->guid;
+                $description = $item->description;
+                $date = date('d/m/Y', strtotime(substr($item->pubDate, 5, 11)));
+
+                echo '<div class="card m-auto mb-5 '.$themeStyle.'">
+                        <img src="'.$image.'" alt="Image de l\'article \'Le Monde\'">
+                        <div class="card-body d-flex flex-column m-auto p-auto">
+                        <div class="titleContainer">
+                            <h3 class="card-title'.$themeStyle.'">'.$title.'</h3>
+                        </div>
+                        <div class="descriptionContainer">
+                            <p class="card-text'.$themeStyle.'">'.$description.'</p>
+                        </div>
+                        <div class="containerDate">
+                            <p class="card-date">'.$date.'</p>
+                        </div>
+                        <div class="buttonContainer">
+                            <a class="btn btn-primary '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
+                        </div>
+                        </div>
+                </div>';
+            }
+        }
+    }

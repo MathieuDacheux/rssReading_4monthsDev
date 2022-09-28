@@ -9,6 +9,8 @@
     $maxArticles = $_COOKIE['numberArticles'];
     $themeStyle = ($_COOKIE['theme'] == '1') ? 'light' : 'dark';
     $title = 'Entreprendre';
+    $method = ($_SERVER['REQUEST_URI'] == '/controllers/pagesController.php') ? './pagesController.php' : './controllers/pagesController.php';
+
 
     // Appel des fonctions
     require_once(__DIR__.'/../helpers/functions.php');
