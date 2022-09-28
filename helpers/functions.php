@@ -103,4 +103,14 @@
                 </div>';
             }
     };
+
+    // !AFFICHAGE DES ÉLÉMENTS DE LA NAVBAR
+    function displayNavbar ($choices, $subjectsValue){
+        if (!isset($_COOKIE['userRssReader'])) {
+            return false;
+        } else {
+            $navbar = compareChoiceAndThemes($choices, $subjectsValue);
+            return $navbar;
+        }
+    } 
     

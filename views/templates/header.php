@@ -25,22 +25,26 @@
                 <!-- NavBar -->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Entreprises</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Argent</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Economie Française</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Immobilier</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Emploi</a></li>
-                    </ul>
-                </div>
-                <!-- Bouton Modal -->
-                <div class="btnContainer">
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="../public/assets/img/icon/param.png" alt="Paramètre" class="modalImg">
-                    </button>
-                    <button class="navbar-toggler btnMenuBurger btn navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+                    <?php
+                        $links = displayNavbar($choices, $subjectsValue);
+                        
+                        if (empty($links)) {
+                            return false;
+                        } else {
+                            foreach ($links as $value) {
+                                echo '<li class="nav-item"><a class="nav-link" href="#">'.$value.'</a></li>';
+                            }
+                            echo '</ul></div>';
+                            echo '<div class="btnContainer">
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <img src="../public/assets/img/icon/param.png" alt="Paramètre" class="modalImg">
+                                    </button>
+                                    <button class="navbar-toggler btnMenuBurger btn navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                            </div>';
+                        }
+                    ?>
             </div>
         </nav>
     </header>
