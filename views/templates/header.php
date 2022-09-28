@@ -12,7 +12,7 @@
     <title>RSS Reader</title>
 </head>
 
-<body>
+<body class="light">
     <!-- En tête -->
     <header>
         <!-- Menu navigation -->

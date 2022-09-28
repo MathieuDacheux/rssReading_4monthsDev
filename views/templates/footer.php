@@ -7,7 +7,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>dzdqz</p>
+                <p></p>
+                <button id="theme-btn">Changer de theme</button>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

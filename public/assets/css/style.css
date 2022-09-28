@@ -1,6 +1,6 @@
 :root {
-    --fontWebsite : 'Zodiak', serif;
-    --fontArticle : 'General Sans', sans-serif;
+    --fontWebsite: 'Zodiak', serif;
+    --fontArticle: 'General Sans', sans-serif;
 }
 
 * {
@@ -9,13 +9,22 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: white;
+    color: black;
+}
 
-    /* HEADER */
-nav{
+.dark {
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+nav {
     width: 100%;
     padding: 2%;
-    box-shadow: rgba(255, 166, 0, 0.15) 1.95px 1.95px 2.6px;
-    
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: rgb(255, 166, 0);
 }
 
 
@@ -27,28 +36,33 @@ nav{
 .modalImg {
     height: 22px;
 }
-.card{
-    box-shadow: rgba(255, 166, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(255, 166, 0, 0.07) 0px 4px 8px, rgba(255, 166, 0, 0.07) 0px 8px 16px, rgba(255, 166, 0, 0.07) 0px 16px 32px, rgba(255, 166, 0, 0.07) 0px 32px 64px;
-    
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+
 }
 
-    /* MAIN SETTINGS */
+/* MAIN SETTINGS */
 
 
 
-    /* FOOTER SETTINGS */
-footer{
+/* FOOTER SETTINGS */
+footer {
     width: 100%;
     box-shadow: rgba(255, 166, 0, 0.15) 2.6px 0px 0px 2.6px;
     background-color: rgb(255, 166, 0);
 }
-.foot{
+
+.foot {
     padding: 2%;
 }
-.contact{
-    padding: 2%; 
+
+.contact {
+    padding: 2%;
 }
-#contactMail{ 
+
+#contactMail {
     text-decoration: none;
     padding: 4%;
     margin: auto;
@@ -57,12 +71,13 @@ footer{
     color: black;
 
 }
-#contactMail:hover{
+
+#contactMail:hover {
     color: blanchedalmond;
 }
 
 
-    /* ERREUR 404 SETTINGS */
+/* ERREUR 404 SETTINGS */
 
 /* Container de toute la page */
 .main404 {
