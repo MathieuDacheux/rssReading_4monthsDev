@@ -11,6 +11,8 @@ require_once(__DIR__.'/../config/data.php');
 require_once(__DIR__.'/../helpers/functions.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $theme = filterAndValidateThemeMode();
+    $number = filterAndValidateRadio();
     $subjects = filterAndValidateCheckbox();
 }
 // Appel des vues
