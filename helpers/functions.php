@@ -87,12 +87,18 @@
                 $link = $item->guid;
                 $description = $item->description;
 
-                echo '<div class="card m-auto mb-5 '.$themeStyle.'" style="width: 20rem;">
-                        <div class="card-body d-flex m-auto p-auto">
-                            <img src="'.$image.'" class="card-img m-5" alt="...">
-                            <h2 class="card-title '.$themeStyle.'">'.$title.'</h2>
-                            <p class="card-text '.$themeStyle.'">'.$description.'</p>
-                            <div type="button" class="btn btn-primary '.$themeStyle.'"><a href="'.$link.'">Voir l\'article complet</a></div>
+                echo '<div class="card m-auto mb-5 '.$themeStyle.'">
+                        <img src="'.$image.'" alt="Image de l\'article \'Le Monde\'">
+                        <div class="card-body d-flex flex-column m-auto p-auto">
+                        <div class="titleContainer">
+                            <h3 class="card-title'.$themeStyle.'">'.$title.'</h3>
+                        </div>
+                        <div class="descriptionContainer">
+                            <p class="card-text'.$themeStyle.'">'.$description.'</p>
+                        </div>
+                        <div class="buttonContainer">
+                            <a class="btn btn-primary '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
+                        </div>
                         </div>
                 </div>';
             }
