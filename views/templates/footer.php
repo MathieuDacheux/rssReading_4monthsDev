@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <p>dzdqz</p>
+                <p>dzdqz</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -16,6 +16,36 @@
         </div>
     </div>
 </div>
+<footer class="text-center">
+    <section class="d-flex flex-sm-row flex-column justify-content-center justify-content-sm-arround align-items-center m-auto">
+
+        <div class="contact">
+            <h6>Contact</h6>
+            <a href="mailto:contact.entreprendre@gmail.com" title="Cliquez sur le mail!" id="contactMail">contact.entreprendre@gmail.com</a>
+        </div>
+        <div class="foot">
+            Copyright© <?php auto_copyright("2022"); ?>
+            <?php function auto_copyright($year = 'auto')
+            { ?>
+                <?php if (intval($year) == 'auto') {
+                    $year = date('Y');
+                } ?>
+                <?php if (intval($year) == date('Y')) {
+                    echo intval($year);
+                } ?>
+                <?php if (intval($year) < date('Y')) {
+                    echo intval($year) . ' - ' . date('Y');
+                } ?>
+                <?php if (intval($year) > date('Y')) {
+                    echo date('Y');
+                } ?>
+            <?php } ?>
+
+        </div>
+    </section>
+
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
+
 </html>
