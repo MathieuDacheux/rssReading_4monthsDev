@@ -13,6 +13,7 @@
     /* HEADER */
 nav{
     box-shadow: rgb(0, 0, 0) 1.95px 1.95px 2.6px;
+    background-color: rgb(255, 166, 0);
 }
 
 
@@ -135,7 +136,30 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 
     /* FOOTER SETTINGS */
 
-
+    footer{
+        width: 100%;
+        /* box-shadow: rgba(255, 166, 0, 0.15) 2.6px 0px 0px 2.6px; */
+        box-shadow: rgb(0, 0, 0) 1.95px -1.95px 2.6px;
+        background-color: rgb(255, 166, 0);
+    }
+    .foot{
+        padding: 2%;
+    }
+    .contact{
+        padding: 2%; 
+    }
+    #contactMail{ 
+        text-decoration: none;
+        padding: 4%;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        color: black;
+    
+    }
+    #contactMail:hover{
+        color: blanchedalmond;
+    }
 
     /* ERREUR 404 SETTINGS */
 
