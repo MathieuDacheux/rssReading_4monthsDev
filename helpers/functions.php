@@ -140,6 +140,6 @@
         } else if ($userChoice == null) {
             displayChoices($newChoices[2], $maxLenght, $themeStyle);
         } else {
-            displayChoices($newChoices[$key - 1], $maxLenght, $themeStyle);
+            displayChoices($newChoices[$userChoice- 1], $maxLenght, $themeStyle);
         }
     }
