@@ -23,7 +23,7 @@
                     <img src="../public/assets/img/logo/logoBlack.png" alt="Logo" class="logo d-inline-block d-center  align-text-center">
                 </a>
                 <!-- NavBar -->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse navbarContainer" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
                     <?php
                         $links = displayNavbar($choices, $subjectsValue);

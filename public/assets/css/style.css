@@ -25,6 +25,14 @@ nav img {
     width: 200px;
 }
 
+.navbarContainer {
+    justify-content: center;
+}
+
+nav label {
+    margin: 0 20px;
+}
+
 @media screen and (max-width: 991px) {
     .logo {
         width: 140px;
@@ -48,6 +56,8 @@ nav img {
 
 .btnContainer {
     width: 200px;
+    display: flex;
+    justify-content: end;
 }
 
     /* MODAL SETTINGS */
@@ -131,6 +141,7 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 
 .modalImg {
     height: 22px;
+    width: 22px;
 }
 
 .hidden {
