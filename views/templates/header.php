@@ -12,11 +12,11 @@
     <title>RSS Reader</title>
 </head>
 
-<body class="light dark">
+<body class="light">
     <!-- En tête -->
     <header>
         <!-- Menu navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light p-4 mb-4 ">
+        <nav class="navbar navbar-expand-lg p-4 mb-4 ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="../public/assets/img/logo/logoBlack.png" alt="Logo" class="logo d-inline-block align-text-center">
@@ -48,12 +48,12 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-xl-4">
+                <div class=" col-12 col-md-6 col-xl-4">
                     <div class="d-flex flex-column justify-content-center m-auto">
                         <!-- Card 1 -->
-                        <div class="card m-auto mb-5 " style="width: 20rem;">
+                        <div class=" card m-auto mb-5 " style="width: 20rem;">
 
-                            <div class="card-body d-flex m-auto p-auto">
+                            <div class=" card-body d-flex m-auto p-auto">
                                 <img src="..." class="card-img m-5" alt="...">
 
                                 <p class="card-text">
