@@ -8,6 +8,7 @@
     $choices = unserialize($_COOKIE['userRssReader']);
     $maxArticles = $_COOKIE['numberArticles'];
     $themeStyle = ($_COOKIE['theme'] == '1') ? 'light' : 'dark';
+    $title = 'Entreprendre';
 
     // Appel des fonctions
     require_once(__DIR__.'/../helpers/functions.php');
