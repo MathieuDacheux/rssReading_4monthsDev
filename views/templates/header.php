@@ -22,9 +22,8 @@
                     <img src="../public/assets/img/logo/logoBlack.png" alt="Logo" class="logo d-inline-block align-text-center">
                 </a>
                 <!-- NavBar -->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Acceuil</a></li>
+                <div class="" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav nav justify-content-center">
                         <li class="nav-item"><a class="nav-link" href="#">Entreprises</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Argent</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Economie Française</a></li>
@@ -33,7 +32,7 @@
                     </ul>
                 </div>
                 <!-- Bouton Modal -->
-                <div class="btnContainer">
+                <div class="btnContainer d-flex justify-content-end">
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="../public/assets/img/icon/param.png" alt="Paramètre" class="modalImg">
                     </button>
