@@ -7,9 +7,9 @@
 
         // VÉRIFICATION SI UTILISATEUR CHECK 3 ÉLÉMENTS
         if (empty($subjects)) {
-            echo '<p>Champs obligatoire</p>';
+            $error[2] = 'Ce champs est vide';
         } else if (count($subjects) > 3 && count($subjects) < 4) {
-            echo '<h1>Vous avez choisi trop de sujets</h1>';
+            $error[2] = 'Ce champs n\'est pas conforme';
         } else {
         // SI PASSAGE DES TEST, HASHASGE DU TABLEAU POUR LE STOCKER DANS UN COOKIE
             $value = serialize($subjects); 
@@ -30,9 +30,9 @@
         
         // VÉRIFICATION SI LE RADIO EST LE BON
         if (empty($number)) {
-            echo '<p>LENGHT VIDE</p>';
+            $error[1] = 'Ce champs est vide';
         } else if ($number != 6 && $number != 9 && $number != 12) {
-            echo '<p>LENGH NON CONFORME</p>';
+            $error[1] = 'Ce champs n\'est pas conforme';
         } else {
             setcookie (
                 'numberArticles',
@@ -51,9 +51,9 @@
         
         // VÉRIFICATION SI LE RADIO EST LE BON
         if (empty($theme)) {
-            echo '<p>THEME VIDE</p>';
+            $error[0] = 'Ce champs est vide';
         } else if ($theme != 1 && $theme != 2) {
-            echo '<p>THEHME NON CONFORME</p>';
+            $error[0] = 'Ce champs n\'est pas conforme';
         } else {
             setcookie (
                 'theme',
@@ -73,7 +73,7 @@
         // VÉRIFICATION SI LE RADIO EST LE BON
         if (empty($userChoice)) {
             echo '<p>Il n\'y a pas de choix</p>';
-        } else if ($userChoice != 0 && $userChoice != 1 && $userChoice != 2) {
+        } else if ($userChoice != 1 && $userChoice != 2 && $userChoice != 3) {
             echo '<p>Le choix n\'est pas conforme</p>';
         } else {
             return $userChoice;
@@ -135,7 +135,7 @@
     
     // !AFFICHAGE DE L'ÉLÉMENT CHOISI DEPUIS LA NAVBAR HOME.PHP
     function displayUniqueSubject ($newChoices ,$userChoice, $maxLenght, $themeStyle) {
-        if ($userChoice != 1 && $userChoice != 2 && $userChoice != null) {
+        if ($userChoice != 1 && $userChoice != 2 && $userChoice != 3) {
             echo '<p>La valeur n\'existe pas</p>';
         } else if ($userChoice == null) {
             displayChoices($newChoices[2], $maxLenght, $themeStyle);

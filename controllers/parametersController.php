@@ -4,18 +4,31 @@
     require_once(__DIR__.'/../config/config.php');
     require_once(__DIR__.'/../config/data.php');
 
+    // Appel des fonctions
+    require_once(__DIR__.'/../helpers/functions.php');
+
     // Variables
     $choices = [];
     $method = ($_SERVER['REQUEST_URI'] == '/controllers/pagesController.php') ? './pagesController.php' : './controllers/pagesController.php';
-
-
-    // Appel des fonctions
-    require_once(__DIR__.'/../helpers/functions.php');
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $theme = filterAndValidateThemeMode();
         $number = filterAndValidateRadio();
         $subjects = filterAndValidateCheckbox();
+        if (isset($_COOKIE['userRssReader']) && isset($_COOKIE['numberArticles']) && isset($_COOKIE['theme'])) {
+            header('Location: /controllers/homeController.php');
+            exit();
+        } else {
+            foreach ($error as $value) {
+                if ($value != '') {
+                    header('Location: /controllers/parametersController.php');
+                    exit(); 
+                } else {
+                    header('Location: /controllers/homeController.php');
+                    exit();
+                }
+            }
+        }
     }
 
     // Appel des vues
