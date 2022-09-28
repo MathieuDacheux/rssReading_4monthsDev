@@ -24,22 +24,8 @@
             <a href="mailto:contact.entreprendre@gmail.com" title="Cliquez sur le mail!" id="contactMail">contact.entreprendre@gmail.com</a>
         </div>
         <div class="foot">
-            Copyright© <?php auto_copyright("2022"); ?>
-            <?php function auto_copyright($year = 'auto')
-            { ?>
-                <?php if (intval($year) == 'auto') {
-                    $year = date('Y');
-                } ?>
-                <?php if (intval($year) == date('Y')) {
-                    echo intval($year);
-                } ?>
-                <?php if (intval($year) < date('Y')) {
-                    echo intval($year) . ' - ' . date('Y');
-                } ?>
-                <?php if (intval($year) > date('Y')) {
-                    echo date('Y');
-                } ?>
-            <?php } ?>
+            <p>Copyright© 2022
+            </p>
 
         </div>
     </section>
