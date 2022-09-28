@@ -1,6 +1,10 @@
 :root {
     --fontWebsite : 'Zodiak', serif;
     --fontArticle : 'General Sans', sans-serif;
+    --lightBackground : #fb8500;
+    --darkBackground : #023047;
+    --white : #fff;
+    --black : #000;
 }
 
 * {
@@ -9,10 +13,20 @@
     box-sizing: border-box;
 }
 
+/* FONTS */
 
-    /* HEADER */
-nav{
+
+
+/* HEADER */
+
+nav {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 10vh;
+    width: 100vw;
+}
+
+nav img {
+    width: 200px;
 }
 
 label {
@@ -23,15 +37,68 @@ label {
     display: none;
 }
 
-.logo {
+/* MAIN SETTINGS */
+
+    /* PARAMETERS */
+
+.containerForm {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formParameters {
+    height: 500px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--lightBackground);
+    border-radius: 10px;
+}
+
+.inputLot {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    width: 300px;
+}
+
+.containerInput {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 200px;
 }
 
-.modalImg {
-    height: 22px;
+.containerInput label {
+    margin-bottom: .5rem;
 }
 
-    /* MAIN SETTINGS */
+.formParameters button {
+    padding: .5rem 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.25rem;
+    font-family: var(--fontArticle);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card {
     width: 90%;
@@ -82,11 +149,11 @@ label {
     width: 100%;
 }
 
-    /* FOOTER SETTINGS */
+/* FOOTER SETTINGS */
 
 
 
-    /* ERREUR 404 SETTINGS */
+/* ERREUR 404 SETTINGS */
 
 /* Container de toute la page */
 .main404 {

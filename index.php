@@ -1,7 +1,9 @@
 <?php
 
     if (!isset($_COOKIE['userRssReader']) && !isset($_COOKIE['numberArticles']) && !isset($_COOKIE['theme'])) {
-        include(__DIR__.'/../rssReading_4monthsDev/controllers/parametersController.php');
+        header('Location: /controllers/parametersController.php');
+        exit();
     } else {
-        include(__DIR__.'/../rssReading_4monthsDev/controllers/homeController.php');
+        header('Location: /controllers/homeController.php');
+        exit();
     }
