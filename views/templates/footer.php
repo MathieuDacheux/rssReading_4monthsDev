@@ -3,17 +3,18 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Paramètre</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p></p>
-                <button id="theme-btn">Changer de theme</button>
+                <button type="button" class="btn btn-toggle" 
+                aria-pressed="true" data-bs-toggle="button" id="theme-btn">
+                Changer de theme</button>
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
@@ -33,6 +34,7 @@
     </section>
 
 </footer>
+<script src="../public/assets/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
