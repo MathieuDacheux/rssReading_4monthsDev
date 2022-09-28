@@ -9,10 +9,10 @@
     
     // Variables
     $choices = unserialize($_COOKIE['userRssReader']);
+    $userChoice = filterAndValidateHomeSelect();
     $newChoices = compareChoiceAndThemes($choices, $themes);
     $maxLenght = $_COOKIE['numberArticles'];
     $themeStyle = ($_COOKIE['theme'] == '1') ? 'light' : 'dark';
-    $userChoice = filterAndValidateHomeSelect();
     $method = ($_SERVER['REQUEST_URI'] == '/controllers/pagesController.php') ? './pagesController.php' : './controllers/pagesController.php';
 
     // Appel des vues

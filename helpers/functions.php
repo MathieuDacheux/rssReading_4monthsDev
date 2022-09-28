@@ -73,7 +73,7 @@
         // VÉRIFICATION SI LE RADIO EST LE BON
         if (empty($userChoice)) {
             echo '<p>Il n\'y a pas de choix</p>';
-        } else if ($userChoice != 1 && $userChoice != 2 && $userChoice != 3) {
+        } else if ($userChoice != 0 && $userChoice != 1 && $userChoice != 2) {
             echo '<p>Le choix n\'est pas conforme</p>';
         } else {
             return $userChoice;
@@ -134,37 +134,12 @@
     } 
     
     // !AFFICHAGE DE L'ÉLÉMENT CHOISI DEPUIS LA NAVBAR HOME.PHP
-    function displayUniqueSubject ($choices ,$userChoice, $maxLenght, $themeStyle) {
-        var_dump($choices);
-        var_dump($userChoice);
-        if (!array_key_exists($userChoice, $choices)) {
+    function displayUniqueSubject ($newChoices ,$userChoice, $maxLenght, $themeStyle) {
+        if ($userChoice != 1 && $userChoice != 2 && $userChoice != null) {
             echo '<p>La valeur n\'existe pas</p>';
+        } else if ($userChoice == null) {
+            displayChoices($newChoices[2], $maxLenght, $themeStyle);
         } else {
-            for ($i = 1; $i <= $maxLenght; $i++) {
-                $item = $choices[$userChoice]->channel->item[$i];
-                $image = $item->children('media', true)->content->attributes();
-                $title = $item->title;
-                $link = $item->guid;
-                $description = $item->description;
-                $date = date('d/m/Y', strtotime(substr($item->pubDate, 5, 11)));
-
-                echo '<div class="card m-auto mb-5 '.$themeStyle.'">
-                        <img src="'.$image.'" alt="Image de l\'article \'Le Monde\'">
-                        <div class="card-body d-flex flex-column m-auto p-auto">
-                        <div class="titleContainer">
-                            <h3 class="card-title'.$themeStyle.'">'.$title.'</h3>
-                        </div>
-                        <div class="descriptionContainer">
-                            <p class="card-text'.$themeStyle.'">'.$description.'</p>
-                        </div>
-                        <div class="containerDate">
-                            <p class="card-date">'.$date.'</p>
-                        </div>
-                        <div class="buttonContainer">
-                            <a class="btn btn-primary '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
-                        </div>
-                        </div>
-                </div>';
-            }
+            displayChoices($newChoices[$key - 1], $maxLenght, $themeStyle);
         }
     }

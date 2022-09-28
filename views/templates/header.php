@@ -32,8 +32,9 @@
                         } else {
                             echo '<form method="POST" action="'.$method.'">';
                             foreach ($links as $key => $value) {
-                                echo '<label class="nav-item" for="'.$key.'">'.$value.'</label>';
-                                echo '<input onchange=\'this.form.submit();\' type="radio" name="userChoice" id="'.$key.'" value="'.$key.'">';
+                                $inputValue = $key + 1;
+                                echo '<label class="nav-item" for="'.$inputValue.'">'.$value.'</label>';
+                                echo '<input onchange=\'this.form.submit();\' type="radio" class="hidden" name="userChoice" id="'.$inputValue.'" value="'.$inputValue.'">';
                             }
                             echo '</form>';
                             echo '</ul></div>';
