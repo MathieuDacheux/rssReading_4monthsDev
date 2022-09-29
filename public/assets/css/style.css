@@ -196,9 +196,7 @@ form {
     border-radius: 10px;
 
 }
-input .hidden{
-    appearance: none;
-}
+
 input[type="radio"] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;

@@ -8,7 +8,7 @@
 
     <h3>ARTICLE 1 - L'EDITEUR</h3>
 
-    <p>L’édition et la direction de la publication du Site est assurée par Alexis Gaillet, domiciliée Amiens,80000, dont le numéro de téléphone est 0000000000,
+    <p>L’édition et la direction de la publication du Site est assurée par Alexis Gaillet, domiciliée Amiens,80000, dont le numéro de téléphone est 00 00 00 00 00,
         et l'adresse e-mail contact.entreprendre@gmail.com.
         ci-après l'"Editeur".</p>
     <h3>ARTICLE 2 - L'HEBERGEUR</h3>

@@ -1,8 +1,6 @@
 <div>
     <h2>Conditions générales</h2>
-    <p>
-
-    </p>
+ 
     <h3>Article 1 : Objet</h3>
     <p>Les présentes CGU ou Conditions Générales d’Utilisation encadrent juridiquement l’utilisation des services du site Entreprendre (ci-après dénommé « le site »).
         L’utilisateur, l’accès au site doit être précédé de l’acceptation de ces CGU. L’accès à cette plate-forme signifie l’acceptation des présentes CGU.</p>
