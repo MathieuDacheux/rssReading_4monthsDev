@@ -19,18 +19,17 @@
             header('Location: /controllers/homeController.php');
             exit();
         } else {
+            header('Location: /controllers/parametersController.php');
             $test = true;
-            foreach ($error as $value) {
-                if($value != '') {
-                    $test = false;
-                }
+            if(count($_COOKIE) != 3) {
+                $test = false;
             }
-            if($test == true) {
-                header('Location: /controllers/homeController.php');
-                exit();
-            }
-        }    
-    }
+        }
+        if($test == true) {
+            header('Location: /controllers/homeController.php');
+            exit();
+        }
+    }    
 
     // Appel des vues
     include(__DIR__.'/../views/templates/header.php');
