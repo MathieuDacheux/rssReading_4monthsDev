@@ -1,31 +1,21 @@
-/*********************** ***********************/
-/***************** constIABLES *******************/
-/*********************** ***********************/
 
-/*********************** ***********************/
-/***************** FUNCTIONS *******************/
-/*********************** ***********************/
+// document.getElementById('theme-btn').addEventListener('click', () => {
+//     const body = document.body;
 
-/*********************** ***********************/
-/******************** WORK *********************/
-/*********************** ***********************/
-// const btn=document.getElementById('theme-btn');
+//     if (body.classList.contains('dark')) {
+//         body.classList.add('light');
+//         body.classList.remove('dark');
 
-// btn.addEventListener ('click',() => {
-//     document.body.classList.toggle("dark-mode");
-//     document.div.classList.toggle("darkmodecard");
-// })
-const btn1=document.getElementById('theme-btn');
-btn1.addEventListener ('click',() => {
-    const body= document.body;
-    const card=document.getElementById('card')
-    if(body.classList.contains('dark')){
-        body.classList.add('light');
-        body.classList.remove('dark');
+//     } else if (body.classList.contains('light')) {
+//         body.classList.add('dark');
+//         body.classList.remove('light');
 
-    }else if (body.classList.contains('light')){
-        body.classList.add('dark');
-        body.classList.remove('light');
+//     }
+// });
 
-    }
-});
+// // local storage
+// function setMode() {
+//     document.body.classList.replace(aModes[Number(!this.checked)], aModes[Number(this.checked)]);
+//     localStorage.setItem('theme-mode', aModes[Number(this.checked)]);
+//     this.parentNode.nextElementSibling.innerHTML = (this.checked) ? "dark" : "light"
+// }
