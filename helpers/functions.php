@@ -33,8 +33,10 @@
         // VÉRIFICATION SI LE RADIO EST LE BON
         if (empty($number)) {
             $error[1] = 'Ce champs est vide';
+            return $error;
         } else if ($number != 6 && $number != 9 && $number != 12) {
             $error[1] = 'Ce champs n\'est pas conforme';
+            return $error;
         } else {
             setcookie (
                 'numberArticles',
@@ -54,8 +56,10 @@
         // VÉRIFICATION SI LE RADIO EST LE BON
         if (empty($theme)) {
             $error[0] = 'Ce champs est vide';
+            return $error;
         } else if ($theme != 1 && $theme != 2) {
             $error[0] = 'Ce champs n\'est pas conforme';
+            return $error;
         } else {
             setcookie (
                 'theme',
