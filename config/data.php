@@ -24,7 +24,7 @@
     ];
 
     // Initialisation des variables globales si les cookies sont présents
-    if (!isset($_COOKIE['userRssReader']) && !isset($_COOKIE['numberArticles']) && !isset($_COOKIE['theme'])) {
+    if (!isset($_COOKIE['userRssReader']) || !isset($_COOKIE['numberArticles']) || !isset($_COOKIE['theme'])) {
         return false;
     } else {
         $choices = unserialize($_COOKIE['userRssReader']);

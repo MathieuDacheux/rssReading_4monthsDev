@@ -8,8 +8,10 @@
         // VÉRIFICATION SI UTILISATEUR CHECK 3 ÉLÉMENTS
         if (empty($subjects)) {
             $error[2] = 'Ce champs est vide';
-        } else if (count($subjects) > 3 && count($subjects) < 4) {
+            return $error;
+        } else if (count($subjects) != 3) {
             $error[2] = 'Ce champs n\'est pas conforme';
+            return $error;
         } else {
         // SI PASSAGE DES TEST, HASHASGE DU TABLEAU POUR LE STOCKER DANS UN COOKIE
             $value = serialize($subjects); 
