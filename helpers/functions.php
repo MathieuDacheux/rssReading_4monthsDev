@@ -120,7 +120,7 @@
                                 <p class="card-date">'.$date.'</p>
                             </div>
                             <div class="buttonContainer">
-                                <a class="btn btn-primary '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
+                                <a class="btn btn-thierry '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
                             </div>
                         </div>
                 </div>';

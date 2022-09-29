@@ -13,20 +13,25 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $theme = filterAndValidateThemeMode();
+        
         $number = filterAndValidateRadio();
         $subjects = filterAndValidateCheckbox();
+        die();
         if (isset($_COOKIE['userRssReader']) && isset($_COOKIE['numberArticles']) && isset($_COOKIE['theme'])) {
             header('Location: /controllers/homeController.php');
             exit();
         } else {
-            if (count($_COOKIE) == 3) {
+            $test = true;
+            foreach ($error as $value) {
+                if($value != '') {
+                    $test = false;
+                }
+            }
+            if($test == true) {
                 header('Location: /controllers/homeController.php');
                 exit();
-            } else {
-                header('Location: /controllers/parametersController.php');
-                exit();
             }
-        }
+        }    
     }
 
     // Appel des vues

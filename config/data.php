@@ -30,5 +30,5 @@
         $choices = unserialize($_COOKIE['userRssReader']);
         $maxArticles = $_COOKIE['numberArticles'];
         $themeStyle = ($_COOKIE['theme'] == '1') ? '' : 'dark';
-        $method = ($_SERVER['REQUEST_URI'] == '/pagesController.php') ? './pagesController.php' : './pagesController.php';
+        $method = ($_SERVER['REQUEST_URI'] == '/section') ? './section' : './section';
     } 

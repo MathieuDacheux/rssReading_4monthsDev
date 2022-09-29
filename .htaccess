@@ -4,3 +4,4 @@ ErrorDocument 404 http://myrssfeed.localhost/404.php
 
 RewriteRule ^parameters$ controllers/parametersController.php
 RewriteRule ^home$ controllers/homeController.php
+RewriteRule ^section$ controllers/pagesController.php

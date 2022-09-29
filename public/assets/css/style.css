@@ -182,6 +182,10 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
     border-radius: 10px;
 }
 
+.btn-thierry {
+    background-color: #ffa600;
+}
+
 .inputLot {
     display: flex;
     flex-direction: row;
