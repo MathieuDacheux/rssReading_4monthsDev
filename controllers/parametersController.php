@@ -19,7 +19,13 @@
             header('Location: /controllers/homeController.php');
             exit();
         } else {
-            
+            if (count($_COOKIE) == 3) {
+                header('Location: /controllers/homeController.php');
+                exit();
+            } else {
+                header('Location: /controllers/parametersController.php');
+                exit();
+            }
         }
     }
 
