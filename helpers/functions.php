@@ -19,7 +19,7 @@
                 time() + (86400 * 30),
                 "/"
             );
-        return $subjects;
+            return $subjects;
         }
     };
 
@@ -40,8 +40,8 @@
                 time() + (86400 * 30),
                 "/"
             );
+            return $number;
         }
-        return $number;
     }
 
     // !FILTRER ET VALIDER LES RADIOS
@@ -61,8 +61,8 @@
                 time() + (86400 * 30),
                 "/"
             );
+            return $theme;
         }
-        return $theme;
     }
 
     // !FILTRER ET VALIDER LES RADIOS DEPUIS HOME.PHP

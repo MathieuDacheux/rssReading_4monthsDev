@@ -23,7 +23,7 @@
         $rssWork
     ];
 
-    // Variables pour plusieurs pages
+    // Initialisation des variables globales si les cookies sont présents
     if (!isset($_COOKIE['userRssReader']) && !isset($_COOKIE['numberArticles']) && !isset($_COOKIE['theme'])) {
         return false;
     } else {
