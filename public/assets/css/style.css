@@ -31,6 +31,7 @@ nav img {
 
 nav label {
     margin: 0 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
@@ -329,6 +330,27 @@ footer a:hover {
         justify-content: space-around;
     }
 }
+
+
+
+    /* À-PROPOS SETTINGS */
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-size: 150%;
+}
+
+.aboutContainer {
+    text-align: center;
+    max-width: 800px;
+}
+
+.about h2 {
+    margin-bottom: 40px;
+}
+
 
 /* ERREUR 404 SETTINGS */
 

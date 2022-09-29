@@ -19,14 +19,12 @@
             header('Location: /controllers/homeController.php');
             exit();
         } else {
-            foreach ($error as $value) {
-                if ($value != '') {
-                    header('Location: /controllers/parametersController.php');
-                    exit(); 
-                } else {
-                    header('Location: /controllers/homeController.php');
-                    exit();
-                }
+            if (count($_COOKIE) == 3) {
+                header('Location: /controllers/homeController.php');
+                exit();
+            } else {
+                header('Location: /controllers/parametersController.php');
+                exit();
             }
         }
     }
