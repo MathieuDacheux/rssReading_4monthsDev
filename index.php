@@ -1,9 +1,9 @@
 <?php
 
     if (!isset($_COOKIE['userRssReader']) && !isset($_COOKIE['numberArticles']) && !isset($_COOKIE['theme'])) {
-        header('Location: /controllers/parametersController.php');
+        header('Location: /parameters');
         exit();
     } else {
-        header('Location: /controllers/homeController.php');
+        header('Location: /home');
         exit();
     }

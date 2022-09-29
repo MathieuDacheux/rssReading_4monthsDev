@@ -15,12 +15,11 @@
         $theme = filterAndValidateThemeMode();
         $number = filterAndValidateRadio();
         $subjects = filterAndValidateCheckbox();
-        var_dump(count($_COOKIE));
         if (isset($_COOKIE['userRssReader']) && isset($_COOKIE['numberArticles']) && isset($_COOKIE['theme'])) {
             header('Location: /controllers/homeController.php');
             exit();
         } else {
-            
+            return false;
         }
     }
 
