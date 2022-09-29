@@ -1,12 +1,6 @@
 <main>
     <div class="containerForm">
         <form method="POST" class="formParameters">
-            <!-- Modal -->
-
-            <button type="button" class="btn-toggle" aria-pressed="true" data-bs-toggle="button" id="theme-btn">
-                Changer de theme
-            </button>
-
             <!-- INPUT POUR LE CHOIX DU THÈME -->
             <h4>
                 Couleur du thème
