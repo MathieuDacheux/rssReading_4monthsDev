@@ -60,6 +60,16 @@ nav label {
     justify-content: end;
 }
 
+.btnParam div {
+    width: 44px;
+    height: 44px;
+    background-color: black;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
     /* MODAL SETTINGS */
 
 .containerCheckbox {
@@ -202,30 +212,6 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 
 
 
-    footer{
-        width: 100%;
-        /* box-shadow: rgba(255, 166, 0, 0.15) 2.6px 0px 0px 2.6px; */
-        box-shadow: rgb(0, 0, 0) 1.95px -1.95px 2.6px;
-        background-color: rgb(255, 166, 0);
-    }
-    .foot{
-        padding: 2%;
-    }
-    .contact{
-        padding: 2%; 
-    }
-    #contactMail{ 
-        text-decoration: none;
-        padding: 4%;
-        margin: auto;
-        text-align: center;
-        align-items: center;
-        color: black;
-    
-    }
-    #contactMail:hover{
-        color: blanchedalmond;
-    }
 
 
 
@@ -246,19 +232,21 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 
 .titleContainer {
     overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 3; /* number of lines to show */
-           line-clamp: 3; 
-   -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .descriptionContainer {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
-            line-clamp: 4; 
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
@@ -285,7 +273,62 @@ ul.ks-cboxtags li input[type="checkbox"]:focus+label {
 
 /* FOOTER SETTINGS */
 
+/* Footer entier */
+footer {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(0, 0, 0) 1.95px -1.95px 2.6px;
+    background-color: rgb(255, 166, 0);
+    color: black;
+}
 
+/* Contient le contenu (pour le responsive) */
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+/* Lien dans le footer (Mentions légales etc...) */
+.footerLink {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Copyright et l'email */
+.footerMail {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Retrait des paramètre par défauts des liens */
+footer a {
+    color: black;
+    margin: 4px 15px;
+    text-decoration: none;
+}
+
+/* Couleur gris lors des survol des liens */
+footer a:hover {
+    color: rgb(61, 61, 61);
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+    /* Mise en ligne des liens du footer */
+    .footerLink {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* Mise en ligne du copyright et email */
+    .footerMail {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
 
 /* ERREUR 404 SETTINGS */
 

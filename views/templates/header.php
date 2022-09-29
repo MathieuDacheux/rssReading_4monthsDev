@@ -39,15 +39,19 @@
                             echo '</form>';
                             echo '</ul></div>';
                             echo '<div class="btnContainer">
-                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <img src="../public/assets/img/icon/param.png" alt="Paramètre" class="modalImg">
-                                    </button>
-                                    <button class="navbar-toggler btnMenuBurger btn navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
+                            
+                            <a href="http://www.rssreading_4monthsdev.localhost/controllers/parametersController.php" class="btnParam">
+                                <div>
+                                    <img src="../public/assets/img/icon/param.png" alt="Paramètre" class="modalImg">
+                                </div>
+                            </a>
+                            
+                            <button class="navbar-toggler btnMenuBurger btn navbar-dark bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
                             </div>';
                         }
-                    ?>
+                        ?>
             </div>
         </nav>
     </header>
