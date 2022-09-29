@@ -19,7 +19,7 @@
             header('Location: /controllers/homeController.php');
             exit();
         } else {
-            return false;
+            
         }
     }
 

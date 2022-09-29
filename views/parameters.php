@@ -1,10 +1,10 @@
-<main>
+<main class="parameters">
     <div class="containerForm">
         <form method="POST" class="formParameters">
 
             <!-- INPUT POUR LE CHOIX DU THÈME -->
             <h4>
-                Couleur du thème
+                Choisissez votre thème
             </h4>
             <div class="inputLot">
                 <div class="containerInput">

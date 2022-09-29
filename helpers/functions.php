@@ -109,20 +109,22 @@
                 $description = $item->description;
                 $date = date('d/m/Y', strtotime(substr($item->pubDate, 5, 11)));
 
-                echo '<div class="card m-auto mb-5 '.$themeStyle.'">
-                        <img src="'.$image.'" alt="Image de l\'article \'Le Monde\'">
-                        <div class="card-body d-flex flex-column m-auto p-auto">
+                echo '<div class="card'.$themeStyle.' ">
+                        <div class="cardContainerImg">
+                            <img src="'.$image.'" alt="Image de l\'article \'Le Monde\'">
+                        </div>
+                        <div class="cardContainerContent">
                             <div class="titleContainer">
-                                <h3 class="card-title'.$themeStyle.'">'.$title.'</h3>
+                                <h3 class="'.$themeStyle.'">'.$title.'</h3>
                             </div>
                             <div class="descriptionContainer">
-                                <p class="card-text'.$themeStyle.'">'.$description.'</p>
+                                <p class="'.$themeStyle.'">'.$description.'</p>
                             </div>
                             <div class="containerDate">
-                                <p class="card-date">'.$date.'</p>
+                                <p class="'.$themeStyle.'">'.$date.'</p>
                             </div>
                             <div class="buttonContainer">
-                                <a class="btn btn-primary '.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
+                                <a class="'.$themeStyle.'" href="'.$link.'" role="button">Voir l\'article complet</a>
                             </div>
                         </div>
                 </div>';
