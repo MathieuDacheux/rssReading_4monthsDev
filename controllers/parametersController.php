@@ -13,26 +13,27 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $theme = filterAndValidateThemeMode();
-        
         $number = filterAndValidateRadio();
         $subjects = filterAndValidateCheckbox();
-        die();
         if (isset($_COOKIE['userRssReader']) && isset($_COOKIE['numberArticles']) && isset($_COOKIE['theme'])) {
-            header('Location: /controllers/homeController.php');
+            header('Location: /home');
             exit();
         } else {
             $test = true;
-            foreach ($error as $value) {
-                if($value != '') {
-                    $test = false;
-                }
+            if($theme != 1 && $theme != 2) {
+                $test = false;
+            } 
+            if ($number != 6 && $number != 9 && $number != 12) {
+                $test = false;
+            } if (count($subjects) != 3) {
+                $test = false;
             }
-            if($test == true) {
-                header('Location: /controllers/homeController.php');
-                exit();
-            }
-        }    
-    }
+        }
+        if($test == true) {
+            header('Location: /home');
+            exit();
+        }
+    }    
 
     // Appel des vues
     include(__DIR__.'/../views/templates/header.php');

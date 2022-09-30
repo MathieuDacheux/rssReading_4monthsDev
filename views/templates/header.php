@@ -40,7 +40,7 @@
                             echo '</ul></div>';
                             echo '<div class="btnContainer">
                             
-                            <a href="http://www.rssreading_4monthsdev.localhost/controllers/parametersController.php" class="btnParam">
+                            <a href="/parameters" class="btnParam">
                                 <div>
                                     <img src="../public/assets/img/icon/param.png" alt="Paramètre" class="modalImg">
                                 </div>

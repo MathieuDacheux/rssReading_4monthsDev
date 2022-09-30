@@ -335,6 +335,27 @@ footer a:hover {
     }
 }
 
+    /* BOUTON DARK MODE */
+
+#switchMode {
+    position: fixed;
+    top: 80vh;
+    right: 3vw;
+    z-index: 3;
+    border: none;
+    background-color: transparent;
+    font-size: 4rem;
+}
+
+#switchMode img{
+    width: 40px;
+    height: 40px;
+}
+
+#switchMode:hover {
+    transition: 300ms;
+    transform: scale(1.5);
+}
 
 
     /* À-PROPOS SETTINGS */
