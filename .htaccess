@@ -1,0 +1,7 @@
+RewriteEngine On
+
+ErrorDocument 404 /404.php
+
+RewriteRule ^parameters$ controllers/parametersController.php
+RewriteRule ^home$ controllers/homeController.php
+

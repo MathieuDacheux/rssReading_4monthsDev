@@ -19,9 +19,13 @@
             header('Location: /controllers/homeController.php');
             exit();
         } else {
-            header('Location: /controllers/parametersController.php');
             $test = true;
-            if(count($_COOKIE) != 3) {
+            if($theme != 1 && $theme != 2) {
+                $test = false;
+            } 
+            if ($number != 6 && $number != 9 && $number != 12) {
+                $test = false;
+            } if (count($subjects) != 3) {
                 $test = false;
             }
         }

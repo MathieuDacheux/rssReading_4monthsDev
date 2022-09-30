@@ -1,6 +1,0 @@
-RewriteEngine On
-
-ErrorDocument 404 http://rssreading_4monthsdev.localhost/404.php
-
-RewriteRule ^parameters$ controllers/parametersController.php
-RewriteRule ^home$ controllers/homeController.php
